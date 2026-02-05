@@ -339,7 +339,7 @@ variable "eks_nodegroup_name" {
 variable "eks_nodegroup_instance_type" {
   type        = string
   description = "Instance type for worker nodes within EKS node group."
-  default     = "m7i.xlarge"
+  default     = "m7i.2xlarge"
 }
 
 variable "eks_nodegroup_ami_type" {
@@ -409,7 +409,7 @@ variable "rds_deletion_protection" {
 variable "rds_aurora_engine_version" {
   type        = number
   description = "Engine version of RDS Aurora PostgreSQL."
-  default     = 16.2
+  default     = 16.8
 }
 
 variable "rds_force_destroy" {
